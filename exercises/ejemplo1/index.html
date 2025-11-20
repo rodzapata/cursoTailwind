@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar con Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+<body class="flex min-h-screen bg-gray-100">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md h-screen fixed top-0 left-0 z-10">
+    <div class="p-6 text-2xl font-bold text-blue-600 border-b border-gray-200">
+      Mi App
+    </div>
+    <nav class="p-4 space-y-2">
+      <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded">
+        <i class="fas fa-home w-5 mr-2"></i>
+        Inicio
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded">
+        <i class="fas fa-user w-5 mr-2"></i>
+        Usuarios
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded">
+        <i class="fas fa-cog w-5 mr-2"></i>
+        Configuración
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-700 rounded">
+        <i class="fas fa-sign-out-alt w-5 mr-2"></i>
+        Salir
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="ml-64 p-6 flex-1">
+    <h1 class="text-3xl font-semibold text-gray-800">Bienvenido</h1>
+    <p class="mt-4 text-gray-600">Este es el contenido principal de la página.</p>
+  </main>
+
+</body>
+</html>

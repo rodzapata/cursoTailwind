@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar Colapsable</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex">
+
+  <!-- Botón hamburguesa -->
+  <button id="menu-btn" class="fixed top-4 left-4 z-20 md:hidden bg-blue-600 text-white p-2 rounded-md">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg p-4 space-y-4 transform -translate-x-full transition-transform duration-300 md:translate-x-0 z-10">
+    <div class="text-2xl font-bold text-blue-600 mb-4">Mi App</div>
+    <nav class="space-y-2">
+      <a href="#" class="flex items-center p-2 text-gray-700 hover:bg-blue-100 rounded">
+        <i class="fas fa-home mr-2"></i> Inicio
+      </a>
+      <a href="#" class="flex items-center p-2 text-gray-700 hover:bg-blue-100 rounded">
+        <i class="fas fa-user mr-2"></i> Usuarios
+      </a>
+      <a href="#" class="flex items-center p-2 text-gray-700 hover:bg-blue-100 rounded">
+        <i class="fas fa-cog mr-2"></i> Configuración
+      </a>
+      <a href="#" class="flex items-center p-2 text-gray-700 hover:bg-blue-100 rounded">
+        <i class="fas fa-sign-out-alt mr-2"></i> Salir
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="flex-1 ml-0 md:ml-64 p-6 transition-all">
+    <h1 class="text-3xl font-bold text-gray-800">Bienvenido</h1>
+    <p class="mt-4 text-gray-600">Este es el contenido principal de la aplicación con un sidebar colapsable.</p>
+  </main>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const sidebar = document.getElementById('sidebar');
+
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('-translate-x-full');
+    });
+  </script>
+</body>
+</html>

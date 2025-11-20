@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de React JS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <h1>Curso de TailwindCSS 4</h1>
+  <h2>Indice Tematico</h2>
+  <ul>
+    +
+    <li><a href="cursoTailwind.html#referencia">Referencias</a></li>
+    <li><a href="cursoTailwind.html#instalacion">Instalacion iniciales</a></li>
+    <li><a href="cursoTailwind.html#tipografia">Typografia</a></li>
+  </ul>
+
+
+  <a href="cursoTailwind.html">⏫</a>
+  <hr />
+  <h2 id="referencia">Referencias</h2>
+  <article>
+    la pagina oficial de talwind es <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TalwindCSS</a> br
+    curso de talwind por yacklyon <a href="https://www.youtube.com/watch?v=W0Si4Dz13dw&list=PLg9145ptuAijcFlJGKxgGIzH915uBzXrv&index=1" target="_blank" rel="noopener noreferrer">yacklyon</a> <br>
+    curso de talwind por codingtube <a href="https://www.youtube.com/watch?v=gvdvuGSksDU&list=PLJubkp8BnTJu9khizC7ywblms1YzdLO3g&index=1" target="_blank" rel="noopener noreferrer">codingtube</a> <br>
+    curso de talwind por codigo369 <a href="https://www.youtube.com/watch?v=h6xQCE6J1VQ" target="_blank" rel="noopener noreferrer">codigo 369</a>
+  </article>
+
+  <a href="cursoTailwind.html">⏫</a>
+  <hr />
+  <h2 id="Instalacion">Instalacion Inicial</h2>
+  <article>
+    instalamos la extension a visual studio code pero que nos ayude a autocompletar se llama <strong>Tailwind CSS IntelliSense</strong> <br>
+    <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" target="_blank" rel="noopener noreferrer">tailwind css IntelliSense</a> <br>
+    creamos una carpeta <strong>ejemplo-tailwind</strong>  e iniicializamos un proyecto de javascript : <br>
+    <pre>
+      <code>
+        npm init
+      </code>
+    </pre>
+    instalamos tailwindCss client : <br>
+    <pre>
+      <code>
+        npm install tailwindcss @tailwindcss/cli
+      </code>
+    </pre>
+    creamos una subcarpeta llamada <strong>src</strong> y detro de esta vamos a crear index.html y input.css <br>
+    el codigo que vamos a colocar dentro del input.css es :
+    <pre>
+      <code>
+        @import "tailwindcss";
+      </code>
+    </pre>
+    modificamos nuestro <strong>package.json</strong> en la parte de escript con la siguiente linea:
+    para no escribir simplemente <strong>npm run tailwind</strong> <br>
+    <pre>
+      <code>
+        
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1",
+          "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+        },
+
+      </code>
+    </pre>
+
+    <strong>NOTA:</strong> <br>
+    nota por utlimo creamos dentro de la carpeta <strong>src</strong> un archivo <strong>Tailwind config.js</strong> en blanco, porque aveces no se actualiza dinamicamente los cambios. <br>
+  </article>
+
+  <a href="cursoTailwind.html">⏫</a>
+  <hr />
+  <h2 id="tipografia">Tipografia</h2>
+  <article>
+    Como agregar fuentes
+  </article>
+
+</body>
+
+</html>
