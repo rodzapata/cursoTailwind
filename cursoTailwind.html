@@ -76,7 +76,21 @@
   <hr />
   <h2 id="tipografia">Tipografia</h2>
   <article>
-    Como agregar fuentes
+    Como agregar fuentes <strong>inter</strong> primero buscamos la fuentes en google font <a href="https://fonts.google.com/selection/embed" target="_blank" rel="noopener noreferrer">inter</a> <br>
+    en la pestaña de importar tomamos el link: <br>
+    nuestro input.css quedaria de la siguiente forma: <br>
+    <pre>
+      <code>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        
+        @import "tailwindcss";
+        
+        @theme{
+            --font-inter: "Inter", sans-serif;
+        }        
+
+      </code>
+    </pre>
   </article>
 
 </body>
