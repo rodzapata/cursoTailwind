@@ -91,6 +91,93 @@
 
       </code>
     </pre>
+    el tamaño de la fuente tambien lo podemos cambiar por ejemplo la clase <strong>text-xs</strong> es el mas pequerño 0.75 rem o 12 pixelees, <br>
+    <pre>
+      <code>
+        &lt;p class="text-xs">prueba de una frase&lt;/p>
+        &lt;p class="text-sm">prueba de una frase&lt;/p>
+        &lt;p class="text-base">prueba de una frase&lt;/p>
+        &lt;p class="text-lg">prueba de una frase&lt;/p>
+        &lt;p class="text-xl">prueba de una frase&lt;/p>
+    
+        &lt;p class="text-2xl">prueba de una frase&lt;/p>
+        
+      </code>
+    </pre>
+    ahora el espaciado (interlineado) se utiliza <strong>/6</strong> , <strong>/7</strong> o <strong>/8</strong> <br>
+    <pre>
+      <code>
+
+        &lt;p class="text-xs/6">prueba de una frase con varias lineas&lt;/p>
+        &lt;p class="text-xs/7">prueba de una frase con varias lineas&lt;/p>
+        &lt;p class="text-xs/8">prueba de una frase con varias lineas&lt;/p>
+        
+      </code>
+    </pre>
+    tambien podemos colocar las letra en cursiva, mayusculas, minusculas o capital: <br>
+    <pre>
+      <code>
+        &lt;p class="italic">
+            rodney zapata
+        &lt;/p>
+        &lt;p class="not-italic">
+            rodney zapata
+        &lt;/p>
+        &lt;p class="uppercase">
+            rodney zapata
+        &lt;/p>
+        &lt;p class="lowercase">
+            RODNEY ZAPATA
+        &lt;/p>
+        &lt;p class="capitalize">
+            rodney zapata
+        &lt;/p>
+       
+      </code>
+    </pre>
+    el peso de la fuente se refiere es que tan grueso o que tan delgado es la fuente: <br>
+    <pre>
+      <code>
+        &lt;p class="font-thin">
+            peso de la fuente delgada
+        &lt;/p>
+        &lt;p class="font-normal">
+            peso de la fuente normal
+        &lt;/p>
+        &lt;p class="font-bold">
+            peso de la fuente bold
+        &lt;/p>
+        &lt;p class="font-black">
+            peso de la fuente negro
+        &lt;/p>
+        &lt;p class="font-semibold">
+            peso de la fuente semibold
+        &lt;/p>
+       
+      </code>
+    </pre>
+    Tambien podemos personalizar el grosor por ejemplo creremos un grosor llamado <strong>ligero</strong> <br>
+    el codigo en <strong>input.css</strong> quedaria de la siguiente forma: <br>
+    <pre>
+      <code>
+        @theme{
+            --font-inter: "Inter", sans-serif;
+            --font-weight-ligero: 12;
+        }        
+
+      </code>
+    </pre>
+    y la forma de usarlo seria: <br>
+    <pre>
+      <code>
+       
+        &lt;p class="font-ligero">
+            prueba con grosor ligero
+        &lt;/p>
+        
+      </code>
+    </pre>
+
   </article>
 
 </body>
