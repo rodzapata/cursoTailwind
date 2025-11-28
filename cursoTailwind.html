@@ -17,6 +17,8 @@
     <li><a href="cursoTailwind.html#referencia">Referencias</a></li>
     <li><a href="cursoTailwind.html#instalacion">Instalacion iniciales</a></li>
     <li><a href="cursoTailwind.html#tipografia">Typografia</a></li>
+    <li><a href="cursoTailwind.html#color">Color</a></li>
+    <li><a href="cursoTailwind.html#padding">Padding</a></li>
   </ul>
 
 
@@ -24,19 +26,27 @@
   <hr />
   <h2 id="referencia">Referencias</h2>
   <article>
-    la pagina oficial de talwind es <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">TalwindCSS</a> br
-    curso de talwind por yacklyon <a href="https://www.youtube.com/watch?v=W0Si4Dz13dw&list=PLg9145ptuAijcFlJGKxgGIzH915uBzXrv&index=1" target="_blank" rel="noopener noreferrer">yacklyon</a> <br>
-    curso de talwind por codingtube <a href="https://www.youtube.com/watch?v=gvdvuGSksDU&list=PLJubkp8BnTJu9khizC7ywblms1YzdLO3g&index=1" target="_blank" rel="noopener noreferrer">codingtube</a> <br>
-    curso de talwind por codigo369 <a href="https://www.youtube.com/watch?v=h6xQCE6J1VQ" target="_blank" rel="noopener noreferrer">codigo 369</a>
+    la pagina oficial de talwind es <a href="https://tailwindcss.com/" target="_blank"
+      rel="noopener noreferrer">TalwindCSS</a> br
+    curso de talwind por yacklyon <a
+      href="https://www.youtube.com/watch?v=W0Si4Dz13dw&list=PLg9145ptuAijcFlJGKxgGIzH915uBzXrv&index=1" target="_blank"
+      rel="noopener noreferrer">yacklyon</a> <br>
+    curso de talwind por codingtube <a
+      href="https://www.youtube.com/watch?v=gvdvuGSksDU&list=PLJubkp8BnTJu9khizC7ywblms1YzdLO3g&index=1" target="_blank"
+      rel="noopener noreferrer">codingtube</a> <br>
+    curso de talwind por codigo369 <a href="https://www.youtube.com/watch?v=h6xQCE6J1VQ" target="_blank"
+      rel="noopener noreferrer">codigo 369</a>
   </article>
 
   <a href="cursoTailwind.html">⏫</a>
   <hr />
   <h2 id="Instalacion">Instalacion Inicial</h2>
   <article>
-    instalamos la extension a visual studio code pero que nos ayude a autocompletar se llama <strong>Tailwind CSS IntelliSense</strong> <br>
-    <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" target="_blank" rel="noopener noreferrer">tailwind css IntelliSense</a> <br>
-    creamos una carpeta <strong>ejemplo-tailwind</strong>  e iniicializamos un proyecto de javascript : <br>
+    instalamos la extension a visual studio code pero que nos ayude a autocompletar se llama <strong>Tailwind CSS
+      IntelliSense</strong> <br>
+    <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" target="_blank"
+      rel="noopener noreferrer">tailwind css IntelliSense</a> <br>
+    creamos una carpeta <strong>ejemplo-tailwind</strong> e iniicializamos un proyecto de javascript : <br>
     <pre>
       <code>
         npm init
@@ -69,14 +79,16 @@
     </pre>
 
     <strong>NOTA:</strong> <br>
-    nota por utlimo creamos dentro de la carpeta <strong>src</strong> un archivo <strong>Tailwind config.js</strong> en blanco, porque aveces no se actualiza dinamicamente los cambios. <br>
+    nota por utlimo creamos dentro de la carpeta <strong>src</strong> un archivo <strong>Tailwind config.js</strong> en
+    blanco, porque aveces no se actualiza dinamicamente los cambios. <br>
   </article>
 
   <a href="cursoTailwind.html">⏫</a>
   <hr />
   <h2 id="tipografia">Tipografia</h2>
   <article>
-    Como agregar fuentes <strong>inter</strong> primero buscamos la fuentes en google font <a href="https://fonts.google.com/selection/embed" target="_blank" rel="noopener noreferrer">inter</a> <br>
+    Como agregar fuentes <strong>inter</strong> primero buscamos la fuentes en google font <a
+      href="https://fonts.google.com/selection/embed" target="_blank" rel="noopener noreferrer">inter</a> <br>
     en la pestaña de importar tomamos el link: <br>
     nuestro input.css quedaria de la siguiente forma: <br>
     <pre>
@@ -91,7 +103,8 @@
 
       </code>
     </pre>
-    el tamaño de la fuente tambien lo podemos cambiar por ejemplo la clase <strong>text-xs</strong> es el mas pequerño 0.75 rem o 12 pixelees, <br>
+    el tamaño de la fuente tambien lo podemos cambiar por ejemplo la clase <strong>text-xs</strong> es el mas pequerño
+    0.75 rem o 12 pixelees, <br>
     <pre>
       <code>
         &lt;p class="text-xs">prueba de una frase&lt;/p>
@@ -180,6 +193,72 @@
 
   </article>
 
+  <a href="cursoTailwind.html">⏫</a>
+  <hr />
+  <h2 id="color">Color</h2>
+  <article>
+    dentro de los colores podemos encontrar color de fondo <strong>bg-red</strong>, color de la letra
+    <strong>text-red</strong> color del borde <br>
+    <strong>border-amber-600 border-2</strong> para que se muestre el color hay que colocar un borde
+    <strong>boder-2</strong> o si no no se muestra. <br>
+    <pre>
+      <code>
+        &lt;h2 class="bg-cyan-900">color de fondo&lt;/h2>
+        &lt;h2 class="text-amber-300 bg-primary">Color de la letra&lt;/h2>
+        &lt;h2 class="border-amber-600 border-2">color del borde&lt;/h2>
+        &lt;h2 class="bg-amber-400 shadow-amber-500 border-4 shadow-2xl">color de la sombra&lt;/h2>
+        &lt;button class="bg-cyan-500 shadow-lg shadow-cyan-500/50 ...">Subscribe&lt;/button>
+        &lt;button class="bg-blue-500 shadow-lg shadow-blue-500/50 ...">Subscribe&lt;/button>
+        &lt;button class="bg-indigo-500 shadow-lg shadow-indigo-500/50 ...">Subscribe&lt;/button>
+      </code>
+    </pre>
+    podemos ersonalizar el color de la fuente por ejemplo creamos un color <strong>primary, second</strong> <br>
+    dentro del archivo <strong>input.css</strong> en themas creamos el siguiente codigo
+    <pre>
+      <code>
+        
+        @theme{
+            --color-primary: #16913A;
+        }
+      </code>
+    </pre>
+    y ya podemos usar el color <strong>primary</strong> donde lo necesitemos. <br>
+
+  </article>
+
+  <a href="cursoTailwind.html">⏫</a>
+  <hr />
+  <h2 id="padding">padding</h2>
+  <article>
+    El paddding es el espacio interno entre el contenido de un elemento (texto, imagen, etc) y su borde. <br>
+    si queremos el mismo padding a todos sus lados por ejemplo de 3, simplemente escribimos <strong>paddding-3</strong>
+    <br>
+    pero si queremos es espacios hacia los lados entonces escribimos <strong>paddingx-2</strong> <br>
+    si queremos que el espacionado sea en solamente en un lado debemos escoger la letra: <strong>t, top</strong>
+    superior,
+    <strong>b, bottom</strong> inferior, <strong>r, right</strong> derecha, izquierda, <strong>l, left</strong> quedando
+    asi:
+    <pre>
+      <code>
+        &lt;button class="bg-amber-600 pt-4">texto&lt;/button>
+
+        &lt;button class="bg-amber-600 pb-4">texto&lt;/button>
+
+        &lt;button class="bg-amber-600 pr-4">texto&lt;/button>
+
+        &lt;button class="bg-amber-600 pl-4">texto&lt;/button>
+
+        &lt;button class="bg-amber-600 p-4">texto&lt;/button>
+
+      </code>
+    </pre>
+    si quiero centra un texto :
+    <pre>
+      <code>
+        &lt;p class="text-amber-300 bg-cyan-200 text-center">texto centrado &lt;/p>
+      </code>
+    </pre>
+  </article>
 </body>
 
 </html>
